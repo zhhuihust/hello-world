@@ -41,12 +41,49 @@ iMOOC上田老师的课程学习完以后，就开始项目实战和温习功课
 #2018-05-15
 ##知识点记录
 ###Python
-1. zip，zip(*)
-2. 
+1. zip，zip(*)，数组组合，数组解耦合
+2. type()类型
+3. 序列化，
+4. 读取文档等操作都是类似的
+5. 显示所有变量，加上这一行前缀
+
+		from IPython.core.interactiveshell import InteractiveShell
+		InteractiveShell.ast_node_interactivity = "all"
+
+6. 
+
+
+#2018-05-17
+##知识点记录
+###Python
+1. generator
+2. Decorators
+Somtimes, you want to modify an existing function without changing its source code. Some common use cases are logging and debugging.
+	
+	例程：
+		
+		def should_log(func):
+	    def func_with_log(*args, **kwargs):
+	        print("Calling:", func.__name__)
+	        return func(*args, **kwargs)
+	    return func_with_log
+	
+		add_with_log = should_log(add)
+		add_with_log(1, 2)
+		Calling: func_with_log
+		Calling: add
+		3
+		
+		@should_log
+		def add(op1, op2):
+		    return op1 + op2
+		​
+		add(1, 2)
+		Calling: add
+	
+3. OOP super函数，使用父类的函数
+
 
 ###Halcon
-大概的扫完了用户手册，开始了解决方案手册的学习。
-大概1000多页左右
-1. 
-
-
+1. 像素级别的边缘提取
+		

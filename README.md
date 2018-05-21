@@ -53,6 +53,10 @@ iMOOC上田老师的课程学习完以后，就开始项目实战和温习功课
 6. 
 
 
+
+
+
+
 #2018-05-17
 ##知识点记录
 ###Python
@@ -83,7 +87,23 @@ Somtimes, you want to modify an existing function without changing its source co
 	
 3. OOP super函数，使用父类的函数
 
-
-###Halcon
-1. 像素级别的边缘提取
+#2018-05-17
+### Magic methods for comparison:
+		
+		
+		__eq__:==
+		__ne__: !=
+		__lt__: <
+		__gt__: >
+		__le__: <=
+		__ge__: >=
+		Magic methods for numbers:
+		
+		__add__: +
+		__sub__: -
+		__mul__: *
+		__floordiv__: //
+		__truediv__: /
+		__mod__: %
+		__pow__: **
 		
